@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  voxbridge:
+    build: ./app
+    container_name: voxbridge
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./logs:/voxbridge/logs
+    environment:
+      - OPENAI_API_KEY=sk-proj-...
+      - VOXBRIDGE_ASSISTANTS={"assistant_1":"asst_xxxxxxxxxxxxxxxxxxxx","assistant_2":"asst_xxxxxxxxxxxxxxxxxxxx"}
+
+    networks:
+      - your_monitoring_network
+    restart: unless-stopped
+
+networks:
+  your_monitoring_network:
+    external: true
