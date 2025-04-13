@@ -1,5 +1,5 @@
 # VoxBridge - OpenAI API Proxy Bridge
-# Developed by Mikesploit - https://github.com/mikesploitsec/voxbridge
+# Developed by mikesploit - https://github.com/mikesploitsec/voxbridge
 # Description: Flask API bridge to OpenAI (Assistants + Chat), with CLI integration, metrics, and logging.
 # License: CC BY-NC 4.0 (Non-Commercial)
 # Contact: mikesploit@proton.me
